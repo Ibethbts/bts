@@ -1,0 +1,211 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/* Estilos para el logo */
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-img {
+    width: 40px; /* Ajusta el tamaño */
+    height: auto;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffc0cb; /* Color rosado BTS */
+}
+
+.logo-img:hover {
+    transform: rotate(360deg);
+    transition: transform 0.5s ease;
+}
+/* Opcional: Efecto hover */
+.logo-container:hover .logo-text {
+    color: #6a0dad; /* Morado BTS al pasar el mouse */
+}
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 1.5rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Sección Hero */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/images/bts-bg.jpg');
+    background-size: cover;
+    color: white;
+    padding: 0 1rem;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+/* Secciones */
+section {
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+}
+
+/* Miembros y Álbumes */
+.members, .albums {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.member, .album {
+    background: white;
+    border-radius: 10px;
+    padding: 1rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.member:hover, .album:hover {
+    transform: translateY(-10px);
+}
+
+.member img, .album img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+/* Reproductor de Música */
+.music-player {
+    background-color: #f0f0f0;
+}
+
+.members {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 1rem;
+}
+
+.member {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.member:hover {
+    transform: translateY(-10px);
+}
+
+.member img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 3px solid #ffc0cb; /* Borde rosado para estilo BTS */
+}
+
+.member h3 {
+    margin: 0.5rem 0;
+    color: #333;
+}
+
+.member p {
+    color: #777;
+    font-size: 0.9rem;
+}
+.player {
+    max-width: 400px;
+    margin: 0 auto;
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+#cover {
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.controls button {
+    background: #333;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1rem;
+    background: #333;
+    color: white;
+}

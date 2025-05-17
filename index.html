@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BTS Fan Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+            <nav>
+        <!-- Logo + Nombre -->
+        <div class="logo-container">
+            <img src="assets/images/bts-logo.png" alt="BTS Logo" class="logo-img">
+            <span class="logo-text">BTS</span>
+        </div>
+        <!-- Menú -->
+        <ul>
+            <li><a href="#home">Inicio</a></li>
+            <li><a href="#about">Biografía</a></li>
+            <li><a href="#discography">Discografía</a></li>
+            <li><a href="#music">Música</a></li>
+        </ul>
+    </nav>
+</header>
+
+<div class="logo-container">
+    <a href="#home">
+        <img src="assets/images/bts-logo.png" alt="BTS Logo" class="logo-img">
+    </a>
+</div>
+
+<footer>
+    <img src="assets/images/bts-logo.png" alt="BTS Logo" width="80">
+    <p>&copy; 2023 BTS Fan Page. Todos los derechos reservados.</p>
+</footer>
+
+    <section id="home" class="hero">
+        <h1>BANGTAN SONYEONDAN</h1>
+        <p>방탄소년단</p>
+    </section>
+
+    <section id="about" class="about">
+        <h2>Biografía</h2>
+        <p>BTS (Bangtan Sonyeondan) es una boy band surcoreana formada en 2013 por Big Hit Entertainment. El grupo está compuesto por 7 miembros: RM, Jin, Suga, J-Hope, Jimin, V y Jungkook.</p>
+        
+   <div class="members">
+    <!-- RM -->
+    <div class="member">
+        <img src="assets/images/rm.jpg" alt="RM">
+        <h3>RM</h3>
+        <p>Líder y rapero principal</p>
+    </div>
+    <!-- Jin -->
+    <div class="member">
+        <img src="assets/images/jin.jpg" alt="Jin">
+        <h3>Jin</h3>
+        <p>Vocalista visual</p>
+    </div>
+    <!-- Suga -->
+    <div class="member">
+        <img src="assets/images/suga.jpg" alt="Suga">
+        <h3>Suga</h3>
+        <p>Rapero y productor</p>
+    </div>
+    <!-- J-Hope -->
+    <div class="member">
+        <img src="assets/images/jhope.jpg" alt="J-Hope">
+        <h3>J-Hope</h3>
+        <p>Rapero y bailarín principal</p>
+    </div>
+    <!-- Jimin -->
+    <div class="member">
+        <img src="assets/images/jimin.jpg" alt="Jimin">
+        <h3>Jimin</h3>
+        <p>Vocalista y bailarín</p>
+    </div>
+    <!-- V -->
+    <div class="member">
+        <img src="assets/images/v.jpg" alt="V">
+        <h3>V</h3>
+        <p>Vocalista y visual</p>
+    </div>
+    <!-- Jungkook -->
+    <div class="member">
+        <img src="assets/images/jungkook.jpg" alt="Jungkook">
+        <h3>Jungkook</h3>
+        <p>Vocalista principal y maknae</p>
+    </div>
+</div>
+
+    <section id="discography" class="discography">
+        <h2>Discografía</h2>
+        <div class="albums">
+            <div class="album">
+                <img src="assets/images/album1.jpg" alt="Album 1">
+                <h3>Love Yourself: Tear</h3>
+            </div>
+            <div class="album">
+                <img src="assets/images/album2.jpg" alt="Album 2">
+                <h3>Map of the Soul: 7</h3>
+            </div>
+            <!-- Agrega más álbumes -->
+        </div>
+    </section>
+
+    <section id="music" class="music-player">
+        <h2>Reproductor de Música</h2>
+        <div class="player">
+            <img src="assets/images/current-song.jpg" alt="Current Song" id="cover">
+            <h3 id="song-title">Dynamite</h3>
+            <audio id="audio" controls>
+                <source src="assets/music/dynamite.mp3" type="audio/mp3">
+            </audio>
+>
+            <div class="controls">
+                <button id="prev"><i class="fas fa-backward"></i></button>
+                <button id="play"><i class="fas fa-play"></i></button>
+                <button id="next"><i class="fas fa-forward"></i></button>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 BTS Fan Page. Todos los derechos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
